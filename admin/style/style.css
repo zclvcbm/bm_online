@@ -1,0 +1,123 @@
+@charset "gb2312";
+/*
+Template Name: 系统管理后台
+Template URI: http://www.fz-php.com/
+Description: 默认�?
+Version: 2.1
+Author: 多多工作�?
+Author URI: http://www.fz-php.com/
+*/
+/* ====================     公共样式　　　　==================== */
+body{background:#fff; font-size:12px; font-family:"宋体",Verdana, Arial; line-height:150%; margin:0px 0 0 0; padding:0; color:#404040;　}
+html, body, p, table,select{font:normal normal normal 12px Tahoma,Verdana,Helvetica,Arial,sans-serif; line-height:150%;  }
+h1,h2,h3,h4,h5,h6,ul,li,dl,dt,dd,form,img,p{margin:0; padding:0; border:none; list-style-type:none;}
+.block{width:960px; height:auto;}
+.f_l{float:left;}
+.f_r{float:right;}
+.tl{ text-align:left;}
+.tc{ text-align:center;}
+.tr{ text-align:right;}
+.tLeft{text-align:left}
+.tRight{text-align:right; background:#E9FFE3;}
+.small{width:80px}
+.small1{width:100px}
+.bLeftRequire{border-left-width:2px; border-left-color:red; width:200px;}
+input, textarea, select{padding:3px 3px; background: #f5f5f5;border: 1px solid #ccc;margin:0; overflow:none; font-family: Tahoma,Arial,Helvetica,sans-serif; color:#444;}
+input.submit,input.button{ background:url(../images/inputbtn.gif); width:73px; height:25px; color:#fff; text-align:center; border:0px; }
+input.button1{ background:url(../images/inputbtn1.gif); width:100px; height:25px; color:#fff; text-align:center; border:0px; }
+.dis{display:block;}
+.inline{display:inline;}
+.none{display:none;}
+.dashed{background:url(images/lineBg.gif) repeat-x left top; color:#3f3f3f;  padding:2px 0 3px 12px;}
+frameset, frame {display: block;}
+.clearfix:after{content:"."; display:block; height:0; clear:both;visibility:hidden;}
+*html .clearfix{ height:1%;}
+*+html .clearfix{ height:1%;}
+a{ color:#000; text-decoration:none;}
+
+/*页面留白*/
+.blank{height:8px; line-height:8px; clear:both; visibility:hidden;}
+.blank5{height:5px; line-height:5px;/* _margin:-3px 0;*/ clear:both; visibility:hidden;}
+
+/* ====================     后台样式　　　　====================== */
+  
+.top{ background:url(../images/top_bg.jpg) repeat-x; height:98px; border-bottom:1px #999 solid; overflow:hidden;}
+.left{ margin-left:5px;}
+.left ul{ padding-top:8px;}
+.left ul li { margin: 0 0 8px 0; line-height:30px;}
+.left .libg01{ background:url(../images/btn01.jpg) no-repeat; width:160px; height:30px; padding-left:25px;  }
+.left .libg02{ background:url(../images/btn02.jpg) no-repeat; width:160px; height:180px; padding:0 10px; }
+.left dt{ padding-left:8px;}
+.left dd{ border-bottom:1px #CCC dashed; padding-left:2px;  width:135px;}
+.right{}
+.main{width:98%; padding:3px; padding-left:10px; padding-top:0px;}
+
+/* ====================     表格样式　　　　====================== */
+table.list{margin:5px 0px 5px 0px; padding:8px; border-collapse:collapse; border:1px solid #ccc; text-align:center; width:100%; font-size:12px; line-height:28px; font-family:Tahoma,Arial,Helvetica,sans-serif; }
+table.list1{margin:5px 10px 5px 10px; padding:8px; border-collapse:collapse; border:1px solid #ccc; text-align:center; width:98%; font-size:12px; line-height:28px; font-family:Tahoma,Arial,Helvetica,sans-serif; }
+table.select{margin:3px 0px; padding:3px; border-collapse:collapse; border:1px solid gray; text-align:left; width:500px; clear:both}
+table.order{margin:3px 0px; padding:3px; border-collapse:collapse; border:1px solid gray; text-align:left; width:260px; clear:both}
+table.login{margin:15% auto 0% auto; padding:3px; border-collapse:collapse; border:1px solid gray; text-align:left; width:350px; max-width:350px; clear:both}
+table.message{margin:10% auto 0px auto; padding:3px; border-collapse:collapse; border:1px solid gray; text-align:center; width:55%}
+table.error{margin:12px 0px; border-collapse:collapse; border:2px groove #d4d4d4; padding:5px; text-align:left; line-height:165%; width:90%}
+table td.topTd{background:url(../images/bgline.gif) repeat-x;}
+table td.bottomTd{background:url(../images/bgline.gif) repeat-x; }
+table th{background:#f7f7f7; height:28px; color:#666; }
+.menu table th{ background:url(../images/menuthico.gif) 10px 7px no-repeat #f7f7f7; text-indent:30px;}
+table thead th{border-left:1px solid #cdd; background-color:#dee; background-image:url(../images/bgcolor.gif); color:#899}
+table.list th,
+table.list td{border-left:1px solid silver; border-bottom:1px solid silver; vertical-align:top; padding:3px}
+table td a{ color:#333; text-decoration:none;}
+table td a:hover{ color:#F00; text-decoration:none;}
+table th.active, td.active{background-color:#CFC}
+table tr.row{background-color:#FFF;}
+table tr.active{background-color:#CFC}
+table th.head{background:url(../images/titlebg.gif) repeat-x; background-position:12px 45%; padding-left:25px; color:white}
+.imgButton{ padding:3px 0;}
+input.add{background-image:url(../images/addbtn.gif); width:73px; height:25px; color:#fff; border:0px; text-indent:10px; }
+input.edit{background-image:url(../images/editbtn.gif); width:73px; height:25px; color:#fff; border:0px; text-indent:10px;}
+input.delete{background-image:url(../images/delbtn.gif); width:73px; height:25px; color:#fff; border:0px; text-indent:10px;}
+input.search{background-image:url(../images/searchbtn.gif); width:73px; height:25px; color:#fff; border:0px; text-indent:10px;}
+input.update{background-image:url(../images/addbtn.gif); width:100px; height:25px; color:#fff; border:0px; text-indent:10px; }
+
+/* ====================     顶部菜单　　　　====================== */
+.toplogo{ height:66px; background:url(../images/logo.jpg) no-repeat;}
+.topmenu {margin-left:300px; height:30px;}
+.topmenu ul {margin: 0px; padding: 0px;}
+.topmenu li {float: left;border-bottom: none;list-style-type: none;	margin-right: 5px;}
+.topmenu li a{ color:#fff;}
+.topmenu span{display: block;float: left; text-align:center;background: url(../images/menubg01.jpg);height: 30px; width:82px;color: #fff; line-height:30px;}
+.topmenu span a{ color:#000; text-decoration:none;}
+.topmenu span.current {display: block;float: left;text-align:center;background: url(../images/menubg02.jpg);}
+.topmenu span.current a{ color:#fff;}
+.nav{ line-height:27px;padding:0 20px;}
+.nav .now_time{ float:left; background:url(../images/timebg.gif) no-repeat 0 7; padding-left:20px;}
+.nav .now_home{ background:url(../images/img_home.gif) no-repeat 0 7; padding-left:20px;float:right; padding-right:20px;}
+.nav .now_out{ background:url(../images/img_out.gif) no-repeat 0 7; padding-left:20px;float:right;}
+
+/* ====================     顶部菜单　　　　====================== */
+.foot{ background:url(../images/foot_bg1.jpg) repeat-x; height:32px; text-align:center; color:#FFF; line-height:32px;}
+/* ====================     翻页样式　　　　====================== */ 
+.page{ text-align:right;}
+.page a{ color:#000; text-decoration:none;}
+.page a:hover{ color:#F00; text-decoration:none;}
+
+div.content{padding:0; clear:both;width:100%; margin-top:0px; }
+div.title{float:none; background:url(../images/maintitlebg.gif) 5px 4px no-repeat #f7f7f7; border:1px solid #ccc; padding-top:5px; padding-bottom:5px; padding-left:10px; padding-right:10px; margin:5px 0px 4px; text-align:left; font-size:14px; font-weight:bold; letter-spacing:4px; text-indent:25px; color:#333; }
+
+/* ====================     编辑订单　　　　====================== */ 
+.role_table{ border-left:solid 1px #ccc; border-top:solid 1px #ccc;}
+.role_table th,.role_table td{ border-right:solid 1px #ccc; border-bottom:solid 1px #ccc; padding:10px;}
+
+/* ====================     后台登陆界面     ==================== */
+.admin_bg{height:612px; padding:60px 0 0 0;}
+.admin_foot{ text-align:center; color:#FFF;}
+.admin_foot a{ text-decoration:none; color:#FFF;}
+.admin_foot a:hover{ text-decoration:underline; color:#FFF;}
+.admin_img{ background:url(../images/adminbg.jpg) no-repeat; width:798px; margin:0 auto; height:579px; overflow:hidden; }
+.admin_name{ color:#000;height:130px; overflow:hidden; padding:250px 0 0 270px; }
+.admin_name li{ padding-bottom:5px; padding-top:20px;}
+.adminlogin{ padding:0px 0 0 400px;}
+.adminlogin input{ border:none; background:none;}
+.adminlogin li{ padding-top:5px;}
+
