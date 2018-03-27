@@ -2,12 +2,12 @@
 
 	
 $mailok = '0';	
-$smtpusermail = 'skyone@ctgu.edu.cn';	
+$smtpusermail = '';	
 $smtpemailto = '';	
 $mailsubject = '修改密码';	
-$smtpserver = 'smtp.ctgu.edu.cn';	
+$smtpserver = '';	
 $smtpserverport = '25';	
-$smtpuser = 'skyone@ctgu.edu.cn';	
-$smtppass = 'Rgmusrl420502';	
+$smtpuser = '';	
+$smtppass = '';	
 
  ?>
